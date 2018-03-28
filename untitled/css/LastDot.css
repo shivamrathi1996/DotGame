@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'origami_mommy_pixellatedRg';
+    src: url('fonts/origami-mommy.pixellated.eot');
+    src: url('fonts/origami-mommy.pixellated.eot?#iefix') format('embedded-opentype'),
+    url('fonts/origami-mommy.pixellated.woff2') format('woff2'),
+    url('fonts/origami-mommy.pixellated.woff') format('woff'),
+    url('fonts/origami-mommy.pixellated.ttf') format('truetype'),
+    url('fonts/origami-mommy.pixellated.svg#origami_mommy_pixellatedRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: "monospace";
+    font-size: 16px;
+    color: white;
+    background: #024555;
+}
+
+a, a:visited, a:hover, a:focus, a:link {
+    color: #A7A300;
+    text-decoration: none;
+    font-family: 'origami_mommy_pixellatedRg', sans-serif;
+    cursor: pointer;
+}
+
+h1, h2 {
+    font-family: 'origami_mommy_pixellatedRg', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+div#game-area {
+    margin: auto;
+}
+
+div#how-to, div#form {
+    display: none;
+}
+
+div.item {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    border: 2px solid #888;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+div.item.filled {
+    background: #009688;
+}
+
+div.item.selected {
+    background: #A7A300;
+}
+
+select, input {
+    border: 2px solid #AAA;
+    font-family: "monospace";
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+input[type="submit"] {
+    width: auto;
+    background: #A7A300;
+    cursor: pointer;
+    font-family: 'origami_mommy_pixellatedRg', sans-serif;
+}
+
+#how-to {
+    max-width: 767px;
+    margin:auto;
+}
+
+#how-to span.item {
+    height: 12px;
+    width: 12px;
+    margin: 0;
+    display: inline-block;
+    border: 2px solid #888;
+    border-radius: 50%;
+}
+
+#how-to span.item.filled {
+    background: #009688;
+}

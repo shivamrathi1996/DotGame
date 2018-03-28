@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Last Dot Standing: I made a game</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../css/LastDot.css"/>
+</head>
+<body>
+<h1>Last Dot Standing</h1>
+<div><a id="new-game">New Game</a> | <a id="rules">Rules</a> | <a target="_blank"
+                                                                  href="https://github.com/kanyuga/last-dot-standing">source</a>
+</div>
+<div id="how-to">
+    <h2>How to Play</h2>
+    <p>Select a dot <span class="item filled"></span> and an empty slot <span class="item"></span> to jump to.</p>
+    <p>Only horizontal or vertical jumps are allowed.</p>
+    <p>In the process you must jump over a single dot which will disappear like magic (Disclaimer: <em>not real
+        magic</em>).</p>
+    <p>The aim of the game is to only have the last dot standing.</p>
+</div>
+<div id="form" class="form">
+    <h2>New Game</h2>
+    <form id="reset-form">
+        <p>Select the Size of the Grid</p><br/>
+        <select id="cols" name="cols">
+            <option value="4" selected="selected">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        x
+        <select id="rows" name="rows">
+            <option value="4" selected="selected">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <input type="submit" value="Go"/>
+    </form>
+</div>
+<div id="game-area"></div>
+<script type="text/javascript" src="../js/LastDot.js"></script>
+</body>
+</html>
